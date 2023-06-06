@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaproject.SignUpController">
+   <left>
+      <ImageView fitHeight="427.0" fitWidth="259.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@signup.png" />
+         </image>
+      </ImageView>
+   </left>
+   <right>
+      <AnchorPane prefHeight="422.0" prefWidth="517.0" style="-fx-background-color: e81720;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="21.0" layoutY="14.0" text="Bağışçı Bilgileri" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="51.0" text="Uyruk*" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="97.0" text="Ad*" textFill="WHITE" />
+            <Label layoutX="203.0" layoutY="97.0" text="Soyad*" textFill="WHITE" />
+            <Label layoutX="30.0" layoutY="154.0" text="T.C. Kimlik No*" textFill="WHITE" />
+            <Label layoutX="30.0" layoutY="293.0" text="Email" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Label>
+            <Label layoutX="21.0" layoutY="267.0" text="İletişim Bilgileri" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ad" layoutX="30.0" layoutY="119.0" onAction="#fonkAd" prefHeight="26.0" prefWidth="152.0" promptText="Ad" />
+            <TextField fx:id="soyad" layoutX="203.0" layoutY="119.0" onAction="#fonkSoyad" promptText="Soyad" />
+            <TextField fx:id="tc" layoutX="30.0" layoutY="172.0" onAction="#fonktc" promptText="11 haneli T.C." />
+            <Label layoutX="30.0" layoutY="202.0" text="Şifre*" textFill="WHITE" />
+            <Label layoutX="202.0" layoutY="202.0" text="Şifre Tekrar*" textFill="WHITE" />
+            <PasswordField fx:id="sifre" layoutX="30.0" layoutY="228.0" onAction="#fonkSifre" promptText="Şifre" />
+            <PasswordField fx:id="sifreTekrar" layoutX="203.0" layoutY="228.0" onAction="#SifreTekrar" promptText="Şifre Tekrar" />
+            <TextField fx:id="email" layoutX="30.0" layoutY="308.0" onAction="#fonkEmail" />
+            <Label layoutX="202.0" layoutY="292.0" text="Cep Telefonu*" textFill="WHITE" />
+            <TextField fx:id="tel" layoutX="202.0" layoutY="308.0" onAction="#fonkTel" promptText="54********" />
+            <Label layoutX="30.0" layoutY="342.0" text="Adres*" textFill="WHITE" />
+            <Label layoutX="202.0" layoutY="342.0" text="Şehir*" textFill="WHITE" />
+            <TextField fx:id="adres" layoutX="30.0" layoutY="360.0" onAction="#fonkAdres" />
+            <Button fx:id="kayitOl" layoutX="370.0" layoutY="354.0" mnemonicParsing="false" onAction="#fonkKayit" prefHeight="52.0" prefWidth="99.0" text="Kayıt Ol" textFill="#e81720" />
+            <Button fx:id="girisdon" layoutX="354.0" layoutY="14.0" mnemonicParsing="false" onAction="#girisdon" prefHeight="52.0" prefWidth="131.0" text="&lt;- Giriş Ekranına Dön" textFill="#e81720" />
+            <TextField fx:id="ulke" layoutX="31.0" layoutY="66.0" onAction="#fonkUlke" promptText="Ülke" />
+            <TextField fx:id="sehir" layoutX="202.0" layoutY="360.0" onAction="#fonkSehir" promptText="Şehir" />
+            <Label fx:id="uyari" layoutX="6.0" layoutY="390.0" prefHeight="31.0" prefWidth="354.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="203.0" layoutY="154.0" text="Kan Grubu*" textFill="WHITE" />
+            <TextField fx:id="kan" layoutX="203.0" layoutY="172.0" onAction="#Kan" promptText="Ör: A Rh(+)" />
+            <Label fx:id="kayitbitim" layoutX="364.0" layoutY="211.0" prefHeight="53.0" prefWidth="118.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaproject.AfterLoginController">
+   <right>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="346.0" prefWidth="548.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="20.0" layoutY="20.0" prefHeight="346.4" prefWidth="548.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TableView fx:id="table" onSort="#tab" prefHeight="65.0" prefWidth="549.0">
+                    <columns>
+                      <TableColumn fx:id="ad_after_table" prefWidth="89.60003662109375" text="Ad" />
+                      <TableColumn fx:id="soyad_after_table" prefWidth="83.99992370605469" text="Soyad" />
+                        <TableColumn fx:id="kan_after" prefWidth="77.5999755859375" text="Kan Tipi" />
+                        <TableColumn fx:id="email_after" prefWidth="84.79998779296875" text="Email" />
+                        <TableColumn fx:id="tc_after" prefWidth="103.20001220703125" text="T.C. Kimlik No" />
+                        <TableColumn fx:id="tel_after" prefWidth="105.60003662109375" text="Telefon" />
+                    </columns>
+                  </TableView>
+                  <Label fx:id="bagis_zaman" layoutX="7.0" layoutY="89.0" prefHeight="83.0" prefWidth="537.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bagis_zaman1" layoutX="6.0" layoutY="173.0" prefHeight="83.0" prefWidth="537.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+   </right>
+   <top>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="111.0" prefWidth="700.0" style="-fx-background-color: e81720;" BorderPane.alignment="TOP_LEFT">
+         <children>
+            <ImageView fitHeight="126.0" fitWidth="144.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@1000_F_259394679_GGA8JJAEkukYJL9XXFH2JoC3nMguBPNH.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="172.0" layoutY="14.0" text="Ad :" textFill="#fafafa" />
+            <Label fx:id="ad_after" layoutX="220.0" layoutY="14.0" prefHeight="18.0" prefWidth="95.0" textFill="WHITE" />
+            <Label layoutX="168.0" layoutY="48.0" text="Soyad :" textFill="WHITE" />
+            <Label fx:id="soyad_after" layoutX="226.0" layoutY="48.0" prefHeight="18.0" prefWidth="84.0" textFill="WHITE" />
+            <Label layoutX="170.0" layoutY="78.0" text="T.C. :" textFill="WHITE" />
+            <Label fx:id="tcafter" layoutX="211.0" layoutY="78.0" prefHeight="18.0" prefWidth="132.0" textFill="WHITE" />
+            <Label fx:id="uyari" layoutX="376.0" layoutY="6.0" prefHeight="106.0" prefWidth="318.0" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <VBox prefHeight="346.0" prefWidth="151.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="bag" mnemonicParsing="false" onAction="#bagiscilar_fonk" prefHeight="175.0" prefWidth="151.0" style="-fx-background-color: D23535;" text="Bağışta Bulun" />
+            <Button fx:id="cikis_after" mnemonicParsing="false" onAction="#cikis_fonk" prefHeight="170.0" prefWidth="151.0" style="-fx-background-color: D23535;" text="Çıkış Yap" />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
